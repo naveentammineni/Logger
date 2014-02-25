@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" 
+    android:background="#fff3f3f3">
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+       android:id="@+id/Title"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/app_name"
+       android:textSize="18pt"
+       android:paddingLeft="100dp"
+       android:fontFamily="sans-seriff-italic"
+       android:textColor="#000000"/>
+        
+    </RelativeLayout>
+	
+   
+</LinearLayout>

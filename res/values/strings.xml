@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">logger</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_startup">StartupActivity</string>
+    <string name="recenttask">Recent Tasks</string>
+    <string name="title_activity_log_details">LogDetailsActivity</string>
+    <string name="title_activity_tab_layout">TabLayoutActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_timer">TimerActivity</string>
+
+</resources>

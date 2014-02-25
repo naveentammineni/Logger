@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterActivity" >
+
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+           android:layout_marginTop="60dp">
+           <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Register a Task"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+             <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="35dp"
+                 android:layout_marginTop="18dp"
+                 android:text="Task Name:"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		    <EditText
+		        android:id="@+id/editText1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:scrollbars = "vertical"
+		        android:ems="10"
+		        android:maxLines="1">
+		
+		        <requestFocus />
+		    </EditText>
+		</LinearLayout>
+
+		 <LinearLayout
+		     android:layout_width="match_parent"
+		     android:layout_height="51dp"
+		     android:orientation="horizontal" >
+
+		    <TextView
+		        android:id="@+id/textView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="39dp"
+		        android:layout_marginTop="16dp"
+		        android:text="Address:"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <EditText
+		        android:id="@+id/editText2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:ems="10" 
+		        android:scrollbars = "vertical"
+		        android:maxLines="1"/>
+		    </LinearLayout>
+
+		 <Button
+		     android:id="@+id/button1"
+		     style="?android:attr/buttonStyleSmall"
+		     android:layout_width="wrap_content"
+		     android:layout_height="34dp"
+		     android:gravity="right"
+		     android:onClick="onClickGetAddress"
+		     android:text="Get Address" />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal">
+	    <TextView
+	         android:id="@+id/textView4"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="Device Id:"
+	         android:textAppearance="?android:attr/textAppearanceMedium" />
+	    <EditText 
+	        android:id="@+id/editText9"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+		        android:scrollbars = "vertical"
+		        android:maxLines="1"/>
+	</LinearLayout>	    
+	 <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:paddingTop="20dp">
+
+	     <Button
+	         android:id="@+id/button2"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:onClick="onClickCancel"
+	         android:text="Cancel"
+	          />
+
+		<Button
+		        android:id="@+id/button3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Register" 
+		        android:onClick="onClickRegister"
+		       android:layout_gravity="right" />
+	    
+
+		    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
